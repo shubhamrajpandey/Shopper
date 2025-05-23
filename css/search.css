@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.products {
+    width: 100%;
+}
+
+.box-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s ease;
+    width: 250px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.search-box-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Hide icons by default */
+.search-box-item .fas.fa-heart,
+.search-box-item .fas.fa-eye {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Position second icon slightly below */
+.search-box-item .fas.fa-eye {
+    top: 60px;
+}
+
+/* Show on hover */
+.search-box-item:hover .fas.fa-heart,
+.search-box-item:hover .fas.fa-eye {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Specific icon styles */
+.search-box-item .fas.fa-heart {
+    background-color: #fff;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.search-box-item .fas.fa-eye {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 14px;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.search-box-item .fas.fa-heart:hover,
+.search-box-item .fas.fa-eye:hover {
+    background-color: #d62828;
+    color: white;
+}
+
+.search-box-item img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.search-box-item .name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.price-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.price-btn .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d63d3d;
+}
+
+.price-btn .qty {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box-item .btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box-item .btn:hover {
+    background: #d62828;
+}

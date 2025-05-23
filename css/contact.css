@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.contact {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact form {
+  flex: 1 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff;
+}
+
+.contact form h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact form .box {
+  width: 95%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f8f8f8;
+}
+
+.contact form textarea.box {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact form .btn {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact form .btn:hover {
+  background: #c62828;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #eee;
+}
+
+.contact-info .info-box {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-info .info-box i {
+  font-size: 1.5rem;
+  background: #e53935;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.contact-info .info-box h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-info .info-box p {
+  margin: 0.25rem 0 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .contact {
+     flex-direction: column;
+  }
+
+  .contact-info, .contact form {
+     flex: 1 1 100%;
+  }
+
+  .contact form .btn {
+     width: 100%;
+  }
+}

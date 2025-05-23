@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* about.css */
+.about {
+  padding: 4rem 2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 4rem;
+}
+
+.about .image {
+  flex: 1 1 45%;
+}
+
+.about .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about .content {
+  flex: 1 1 45%;
+}
+
+.about .content h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about .content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: #fff;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.about .btn:hover {
+  background: #e60023;
+  color: #fff;
+}
+
+.stats-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.stat-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box .icon {
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem;
+}
+
+.stat-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.stat-box p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.stat-box.active {
+  background: #e60023;
+  color: #fff;
+  border: none;
+}
+
+.stat-box.active .icon {
+  background: #fff;
+  color: #e60023;
+}
+
+.stat-box.active h3,
+.stat-box.active p {
+  color: #fff;
+}
+
+
+/* Review section */
+.reviews {
+  padding: 4rem 2rem;
+  background: #fff ;
+  text-align: center;
+}
+
+.reviews .heading {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.reviews-slider {
+  max-width: 1200px;
+  height: 400px;
+  margin: auto;
+}
+
+.reviews .swiper-slide {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.reviews .swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.reviews .swiper-slide img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.reviews .swiper-slide p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.reviews .stars i {
+  color: #f39c12;
+}
+
+.reviews .swiper-slide h3 a {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Our Service Style */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7rem;
+  padding: 6rem 1rem;
+  background: #fff;
+  text-align: center;
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.info-section .info-box {
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+.info-section .icon {
+  width: 60px;
+  height: 60px;
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 4px solid #ccc;
+  transition: 0.3s ease;
+}
+
+.info-section .icon:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.info-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.info-section p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.social-icons {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+.social-icons a {
+   color: #555;
+   font-size: 16px;
+   transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+   color: #0077b5; 
+}

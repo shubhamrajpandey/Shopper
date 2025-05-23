@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.checkout-orders {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #fff;
+}
+
+.checkout-orders form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.user-details,
+.order-items {
+    flex: 1 1 48%;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.user-details h3,
+.order-items h3 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.inputBox {
+    margin-bottom: 1rem;
+}
+
+.inputBox span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.inputBox input,
+.inputBox select {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #d62828;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.display-orders p {
+    font-size: 16px;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-orders .grand-total {
+    font-weight: bold;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    font-size: 18px;
+}
+
+.display-orders span {
+    font-weight: normal;
+}
+
+select.box {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    .checkout-orders {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .user-details,
+    .order-items {
+        flex: 1 1 100%;
+    }
+}

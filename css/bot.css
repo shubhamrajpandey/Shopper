@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 301px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 9999;
+}
+
+.chat-header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.close-btn {
+  cursor: pointer;
+}
+
+.chat-body {
+  height: 200px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.bot-message {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #d32f2f;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.we-are-here-bubble {
+  position: fixed;
+  bottom: 90px; /* adjust to be just above your chat icon */
+  right: 15px;
+  background-color: #ff4081; /* bright pink, like in the image */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 14px;
+  z-index: 9998;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Speech bubble tail */
+.we-are-here-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: #ff4081 transparent transparent transparent;
+}
+
+
+.send-btn {
+  background: white;
+  border: none;
+  margin-left: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d32f2f;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+
+}
+
+.user-message {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: fit-content;
+  align-self: flex-end;
+  margin-left: auto;
+}
